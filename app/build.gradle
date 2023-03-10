@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.lab8'
+    namespace 'com.example.lab88'
     compileSdk 33
 
     defaultConfig {
