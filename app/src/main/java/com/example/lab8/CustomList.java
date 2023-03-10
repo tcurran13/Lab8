@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.myapplication.R;
+import com.example.lab8.R;
 
 import java.util.ArrayList;
 
@@ -65,8 +65,33 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
+    /**
+     * When given a city, return whether or not it belongs in the list
+     * @param city
+     * @return boolean
+     */
     public boolean hasCity(City city){
-
-        return false;
+        return cities.contains(city);
     }
+
+//    /**
+//     * Check if a city is present in the list. If it does then remove it from the list, if not then throw an exception
+//     * @param city
+//     */
+//    public void delete(City city){
+//        if (cities.contains(city)){
+//            cities.remove(city);
+//        } else{
+//            throw new IllegalArgumentException();
+//        }
+//    }
+//
+//
+//    /**
+//     * Return how many cities are in the list
+//     * @return int
+//     */
+//    public int countCities(){
+//        return cities.size();
+//    }
 }
